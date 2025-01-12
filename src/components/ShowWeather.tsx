@@ -8,7 +8,7 @@ const ShowWeather = () => {
   const [error, setError] = useState<string | null>(null);
 
   const fetchWeather = async (city: string) => {
-    const apiKey = 'e00f744a969bffee9b810e829f0bca28';
+    const apiKey = 'API_KEY';
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
     setLoading(true);
